@@ -1,0 +1,12 @@
+para compilar arquivos .s :
+
+nasm -f elf -o file.o file.s
+
+ligação
+
+ld -m elf_i386 -o file file.o
+
+caso use biblioteca:
+
+ld -m elf_i386 -o file file.o bib.o
+
